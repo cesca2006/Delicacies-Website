@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log In to Delicacies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+  <style>
+    body
+    {
+      Background-image:Url(https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyYWMzanpseWE2djdlYWsyYnd6Y3JndnRiNHJpb3F6MzRqZ2ExdWYwYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Uodnf0BK7gSjzuwtDu/giphy.gif);
+      background-repeat: no-reapeat; 
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+    } 
+    
+    .form
+    {
+      border: 3px inset;
+      backdrop-filter: blur 100px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background-color: rgba (255,255,255,0.239);
+    }
+  </style>
+
+<body>
+
+    <header class="container py-4 mb-3"
+        style="font-family: fantasy;">
+        <h1>Delicacies Kitchen</h1>
+        <p>Log in to Delicacies Recipes</p>
+    </header>
+
+    <main class="container"
+       style="font-family: fantasy;">
+
+        <section class="form mb-3 rounded-5 p-3">
+           <h2 style="text-align: center;">Log In</h2>
+            <form action="./index.html" method="post">
+
+                <!-- Email/Password -->
+
+                <div class="row mb-3">
+                    <div class="form-group col-md-10"
+                        style="text-align: center; margin-left: 8%;">
+
+                        <label for="Email"
+                           class="Email">
+                           Email
+                        </label>
+
+                        <input type="email"
+                        style="text-align: center;"
+                        id="email"
+                        name="email"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        placeholder="delicacies@gmail.com"
+                        required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="form-group col-md-10"
+                        style="text-align: center; margin-left: 8%;">
+
+                        <label for="Password"
+                           class="Password">
+                           Password
+                        </label>
+
+                        <input type="password"
+                        style="text-align: center;"
+                        id="password"
+                        name="password"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        required>
+                    </div>
+                </div>
+
+                <!-- Remember me/Login button -->
+
+                    <div class="form-check mb-3"
+                        style="margin-left: 8%;">
+                        <input class="form-check-input"
+                        type="checkbox"
+                        id="remember">
+                    
+                        <label class="form-check-label"
+                            for="remember">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit"
+                        style="width: 50%; margin-left: 25%;"
+                        class="btn btn-primary mb-3">
+                        Login
+                    </button>
+                </div>
+
+                <!-- Registration Link -->
+                 
+                <div class="text-center fantasy">
+                    Don't have an account?
+                    <a href="./regitrtionfrm.html">Register</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

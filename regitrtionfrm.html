@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Delicacies Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+  <style>
+    Body
+    { 
+    background-image:url(https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyZm4xd21mbGlnaXQxcWEyNmF1OG96eGUyZHNyc2E1bWY4YTVsMG1zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Uue8tci27Iy1RmG0MP/giphy.gif);
+      background-repeat:no-reapeat;
+      background-size:cover;
+      background-attachment:fixed;
+    }
+    
+    @media screen and (min-width: 768px)
+    {
+      width:200px
+      height:200px
+    }
+    
+    header
+    {
+      color:white;
+      font-family: fantasy;  
+    }
+    
+    main
+    {
+      font-family: fantasy;
+    }
+    
+    section
+    {
+      border: 3px inset;
+      backdrop-filter: blur 100px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.239);
+    }
+
+    h2
+    {
+      color:white;
+    }
+    
+    label
+    {
+      color:white;
+    }
+    
+    .cook
+    {
+      text-align: center;
+    }
+    
+    .level
+    {
+      align-items: center;
+    }
+    
+    .bio
+    {
+      text-align: center;
+    }
+
+  </style>
+
+<body>
+
+    <header class="container py-4 mb-3">
+        <h1>Delicacies Kitchen</h1>
+        <p>Account Registration & Profile Management</p>
+    </header>
+
+
+
+    <main class="container">
+
+        <section class="form mb-3 rounded-5 p-3">
+           <h2>Account Registration</h2>
+            <form action="./LogInFrms.html" method="post">
+
+                <!-- First name/Last name -->
+
+                <div class="row mb-3">
+                    <div class="form-group col-md-6">
+
+                        <label for="fname"
+                           class="fname">
+                           First Name
+                        </label>
+
+                        <input type="text"
+                        id="fname"
+                        name="fname"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        
+                        <label for="lname"
+                            class="lname">
+                            Last Name
+                        </label>
+
+                        <input type="text"
+                        id="lname"
+                        name="lname"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        required>
+                    </div>
+                </div>
+
+                <!-- Email/Password -->
+            
+                <div class="row mb-3">
+                    <div class="form-group col-md-6">
+
+                        <label for="email"
+                           class="email">
+                           Email Address
+                        </label>
+
+                        <input type="email"
+                        id="email"
+                        name="email"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        placeholder="delicacies@gmail.com"
+                        required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        
+                        <label for="Password"
+                            class="Password">
+                            Password
+                        </label>
+
+                        <input type="password"
+                        id="password"
+                        name="password"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        required>
+                    </div>
+                </div>
+
+                <!-- Bday/PhoneNumber -->
+
+                <div class="row mb-3">
+                    <div class="form-group col-md-6">
+                        <label for="bday"
+                            class="form-label">
+                            Birth Date
+                        </label>
+
+                        <input type="date"
+                        id="bday"
+                        name="bday"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="Number"
+                            class="form-label">
+                            Phone Number
+                        </label>
+
+                        <input type="number"
+                        id="number"
+                        name="number"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        required>
+                    </div>
+                </div>
+
+                <!-- Cooking Difficulty -->
+
+                <div class="cook">
+                    <label class="form-label d-block">
+                        Cooking Difficulty
+                    </label>
+
+                    <div>
+                        <label class="form-check-label">
+                                <input type="radio"
+                                name="level"
+                                value="beginner"
+                                class="form-check-input bg-dark border-secondary">
+                                Beginner
+                        </label>
+
+                        <label class="form-check-label">
+                                <input type="radio"
+                                name="level"
+                                value="intermediate"
+                                class="form-check-input bg-dark border-secondary">
+                                Intermediate
+                        </label>
+                        <label class="form-check-label">
+                                <input type="radio"
+                                name="level"
+                                value="pro"
+                                class="form-check-input bg-dark border-secondary">
+                                Professional
+                        </label>
+                    </div>
+                </div>
+
+                <!-- My Biography -->
+
+                <div class="bio">
+                    <label for="bio"
+                        class="form-label">
+                        My Biography
+                    </label>
+
+                    <textarea id="bio"
+                        name="bio"
+                        rows="4"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        placeholder="About the dishes i've made...">
+                    </textarea>
+                </div>
+
+                <!-- Terms & Conditions -->
+
+                <div class="form-group mb-3">
+                    <label class="form-check-label">
+                        <input type="checkbox"
+                        name="terms"
+                        required class="form-check-input bg-dark border-secondary">
+                        I Agree to the Terms and Conditions
+                    </label>
+                </div>
+
+                <!-- Submit/Clear buttons -->
+
+                <div class="btn-container d-flex gap-2">
+                    <input type="submit"
+                    value="Register Account"
+                    class="btn btn-primary">
+
+                    <input type="reset"
+                    value="Clear form"
+                    class="btn btn-outline-light">
+                </div>
+            </form>
+        </section>
+
+                <!-- Personal Vlog/Average Servings -->
+
+        <section class="form mb-3 rounded-5 p-3">
+            <h2>Preferences & Statistics</h2>
+            <form>
+
+                <div class="row mb-3">
+                    <div class="form-group col-md-6">
+                        <label for="site"
+                            class="form-label">
+                            Personal Vlog
+                        </label>
+
+                        <input type="url"
+                        id="site"
+                        name="site"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        placeholder="https://Delicacies.com">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="servings"
+                            class="form-label">
+                            Average Servings
+                        </label>
+
+                        <input type="number"
+                        id="servings"
+                        name="servings"
+                        min="1"
+                        max="100"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary">
+                    </div>
+                </div>
+
+                <!-- Preferred Time/Theme Color -->
+
+                <div class="row mb-3">
+                    <div class="form-group col-md-6">
+                        <label for="time"
+                            class="form-label">
+                            Preferred Cooking Time
+                        </label>
+                        <input type="datetime-local"
+                        id="time"
+                        name="time"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="theme-color"
+                            class="form-label">
+                            Theme Color
+                        </label>
+                        <input type="color" id="theme-color" name="theme-color" value="#ff00dd"
+                        class="form-control form-control-color bg-transparent border-0 p-0"
+                        style="width: 50px; height: 50px;">
+                    </div>
+                </div>
+
+                <!-- Daily Reminders/Search Bar -->
+
+                <div class="row mb-3">
+                    <div class="form-group col-md-6">
+                        <label for="appt-time"
+                            class="form-label">
+                            Daily Reminders
+                        </label>
+                        <input type="time"
+                        id="appt-time"
+                        name="appt-time"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="search-recipes"
+                            class="form-label">
+                            Search Recipes
+                        </label>
+                        <input type="search"
+                        id="search-recipes"
+                        class="form-control bg-dark bg-opacity-50 text-light border-secondary"
+                        placeholder="Search Recipes">
+                    </div>
+                </div>
+
+                <!-- Cooking Difficulty -->
+
+                <div class="form-group mb-3">
+                    <label for="vol"
+                        class="form-label">
+                        Recipe Difficulty
+                    </label>
+                    <input type="range"
+                    id="vol"
+                    name="vol"
+                    min="0"
+                    max="10"
+                    class="form-range">
+                </div>
+
+                <!-- Picture -->
+                <div class="form-group mb-3">
+                    <label for="pfp"
+                        class="form-label">
+                        Upload Profile Picture
+                    </label>
+                    <input type="file"
+                    id="pfp"
+                    name="pfp"
+                    class="form-control bg-dark bg-opacity-50 text-light border-secondary">
+                </div>
+
+                <!-- Save/Submit Buttons -->
+
+                <div class="d-flex gap-2 mb-3">
+                    <button type="button"
+                        class="btn btn-success">
+                        Save Preferences
+                    </button>
+
+                    <button type="button"
+                        class="btn btn-outline-primary">
+                        <a href="./LogInFrms.html"
+                            class="text-decoration-none text-light">
+                            SUBMIT
+                        </a>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+                <!-- Log In Link -->
+
+                <div class="text-center">
+                    Already have an account?
+                    <a href="./LogInFrms.html">Log In</a>
+                </div>
+
+                <!-- My Footer -->
+
+            <footer class="bg-dark bg-opacity-75 text-center py-4 mt-5">
+                <p class="mb-0">&copy; 2026 delicacies recipes</p>
+            </footer>
+</body>
+</html>
